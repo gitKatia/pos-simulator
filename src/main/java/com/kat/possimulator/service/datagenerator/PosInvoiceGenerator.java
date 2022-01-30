@@ -6,7 +6,6 @@ import com.kat.possimulator.model.PosInvoice;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import java.time.Instant;
 import java.util.*;
 import java.util.stream.IntStream;
 
@@ -39,7 +38,7 @@ public class PosInvoiceGenerator {
                 .reduce(Double::sum)
                 .orElse(0.00);
         return PosInvoice.builder()
-                .createdAt(Instant.now())
+                .createdAt(System.currentTimeMillis())
                 .deliveryAddress(deliveryAddress)
                 .customerCardNo(UUID.randomUUID().toString())
                 .posId(UUID.randomUUID().toString())

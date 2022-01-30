@@ -5,7 +5,6 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
 
-import java.time.Instant;
 import java.util.List;
 
 @Data
@@ -16,7 +15,7 @@ public class PosInvoice {
     @JsonProperty("invoice_no")
     private String invoiceNo;
     @JsonProperty("created_at")
-    private Instant createdAt;
+    private Long createdAt;
     @JsonProperty("store_id")
     private String storeId;
     @JsonProperty("pos_id")
