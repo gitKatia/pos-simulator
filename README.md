@@ -1,5 +1,5 @@
 # Getting Started
-* The application is a Spring boot application using Spring for Apache Kafka
+* The application is a Spring boot application using Spring boot for Apache Kafka
 
 ### Description
 
